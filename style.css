@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;  /* Eliminamos el padding para que no haya espacios extras */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    border-bottom: 4px solid #003366;
+    width: 100%;
+}
+
+/* Lista de enlaces con imágenes */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Asegura que la lista ocupe todo el ancho */
+    gap: 20px;  /* Añade espacio entre los elementos */
+}
+
+/* Enlace dentro de la lista */
+ul a {
+    display: block;
+    text-decoration: none;
+    width: 48%; /* Ocupa el 48% del ancho */
+    margin-bottom: 0; /* Eliminamos cualquier margen innecesario */
+}
+
+/* Estilo de las imágenes dentro de los enlaces */
+ul a img {
+    width: 100%; /* Las imágenes ocupan el 100% de su contenedor */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las imágenes */
+ul a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Links dentro de los párrafos */
+a {
+    color: #003366;
+    text-decoration: none;
+    border-bottom: 2px solid #003366;
+}
+
+a:hover {
+    color: #005bb5;
+    border-bottom-color: #005bb5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* Estilo para las imágenes unidas de Pepe y Coentrao */
+ul a.pepe-coentrao {
+    width: 90%; /* Ocupa un 90% del ancho */
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul a.pepe-coentrao img {
+    width: 48%; /* Cada imagen ocupa el 48% del ancho */
+    height: auto;
+    margin: 0; /* Sin márgenes entre las imágenes */
+}
+
+/* Responsividad: ajustar en dispositivos más pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        padding: 15px 0;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul a {
+        width: 80%; /* Las imágenes ocupan más espacio en móviles */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Estilo en dispositivos móviles para las imágenes unidas */
+    ul a.pepe-coentrao {
+        width: 80%; /* En móvil ocupan menos espacio */
+    }
+
+    ul a.pepe-coentrao img {
+        width: 48%; /* Cada imagen sigue ocupando el 48% */
+    }
+}
+
+
